@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="Players">
+      <input type="text" placeholder="player 1 name" id="p1" name="p1" />
+
+      <br />
+
+      <input type="text" placeholder="player 2 name" id="p2" name="p2" />
+    </div>
+
+    <div class="options">
+      <div>
+        Dimension
+        <select name="dimension" id="dimension"></select>
+      </div>
+      <div>
+        <button id="game-start" onclick="startGame()">
+          Start
+        </button>
+        <button class="hide" id="reset">Reset</button>
+      </div>
+    </div>
+    <p id="message"></p>
+    <div id="game-container" class="hide"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
